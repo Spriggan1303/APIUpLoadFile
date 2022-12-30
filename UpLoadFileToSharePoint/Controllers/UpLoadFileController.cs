@@ -34,12 +34,9 @@ namespace UpLoadFileToSharePoint.Controllers
                         HttpResponse Response = System.Web.HttpContext.Current.Response;
                         Response.Clear();
                     }
-                   // string SiteUrl = "https://itdvn.sharepoint.com/sites/iWater";
-                 //   string DocumentLibrary = "Documents";
+            
                     string FileName = fileSavePath;
-                  //  string CustomerFolder = "IWaterImage";
-               //     string UserName = "itdsw.info@itd.com.vn";
-                  //  string Password = "itdcolen@2019";
+              
 
                     res = UpLoadFileToSharepointHelper.UploadFileToSharePoint(SiteUrl, DocumentLibrary, CustomerFolder,
                         FileName, UserName, Password);
